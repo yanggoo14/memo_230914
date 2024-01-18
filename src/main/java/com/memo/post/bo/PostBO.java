@@ -35,4 +35,8 @@ public class PostBO {
 	
 		 postMapper.insertPost(userId, subject, content, imagePath);
 	}
+	public Post getPostByPostIdUserId(int postId, int userId) {
+		return postMapper.selectPostByPostIdUserId(postId, userId);
+	}
+	
 }
